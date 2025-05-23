@@ -1,0 +1,145 @@
+/* Home */
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .homeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1313px;
+  gap: 2rem; /* Space between image and content */
+  }
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 190px;
+  }
+
+.aboutImg {
+  width: 350px; /* Adjust size as needed */
+  height: 350px;
+  object-fit: cover;
+  background-color: #e8e6e7;
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+.homeContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left; /* Align text to the left */
+  }
+
+.info h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  }
+
+.info span {
+    background: linear-gradient(to right, #3b82f6, #e8499e);
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text transparent so the gradient shows */
+    background-clip: text;
+  }
+
+
+.info h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  }
+
+.ctaButton {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: fit-content;
+}
+
+.ctaButton a{
+  padding: 12px 24px;
+  background-image: linear-gradient( to bottom right, #0f172a, #121314);
+  color: rgb(143, 186, 255);
+  border: 2px solid rgb(143, 186, 255);
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+
+.ctaButton i {
+  font-size: 16px;/* Increase icon size (adjust as needed) */
+  margin-left: 10px; /* Move icon 10px to the right */
+}
+
+/* Responsive design for tablets and mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .home {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 60px 0; /* Add padding to account for fixed navbar */
+  }
+
+  .homeContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 95%;
+    gap: 1.5rem;
+    padding: 15px;
+    margin-top: 40px;
+  }
+
+  .info h1{
+    line-height: 40px;
+    width:310px;
+  }
+
+  .imageWrapper {
+    margin: 0; /* Remove margin for centered layout */
+  }
+
+  .aboutImg {
+    width: 200px;
+    height: 200px;
+    border-width: 3px; /* Thinner gradient border for mobile */
+  }
+
+  .homeContent {
+    align-items: center;
+  }
+
+  .info h1 {
+    font-size: 24px; /* Smaller heading */
+    margin-bottom: 8px;
+  }
+
+  .info h2 {
+    font-size: 20px; /* Smaller subheading */
+    padding-bottom: 8px;
+  }
+
+  .ctaButton {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+  }
+
+  .ctaButton a {
+    width: 100%; /* Full-width buttons */
+    max-width: 250px; /* Limit button width */
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+}
+  
