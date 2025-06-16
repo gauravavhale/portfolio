@@ -8,6 +8,8 @@ export default function RootLayout({ children }) {
       <head>
         <title>Gaurav Avhale | Web Developer Portfolio</title>
         <link rel="icon" href="images/svg.jpg"></link>
+        <meta name='theme-color' content='#06c1db'/>
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/ootstrap.css"></link>
         <meta name="keywords" content="Gaurav Avhale, web developer portfolio, front-end developer, back-end developer, full-stack developer, web development, software developer, JavaScript, React, HTML, CSS, Node.js, portfolio projects, hire developer"></meta>
         <meta name="description" content="Explore Gaurav Avhale's web developer portfolio showcasing innovative projects in JavaScript, React, and full-stack development. Hire me for your next project!"></meta>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>

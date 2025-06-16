@@ -20,7 +20,6 @@ export const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <motion.img 
-      whileHover={{ scale: 1.2 }}
       initial={{ opacity: 0 , x:1500}} 
       animate={{ x:0, rotate:360}} 
       whileInView={{ opacity: 1 }}

@@ -23,7 +23,7 @@ export default function App() {
           <Image src="/images/cv-image6.png" alt="Profile" className={styles.aboutImg} width={200} height={200}/>
         </div>
         <div className={styles.info}>
-          <h1>Hi, I am Gaurav Avhale.👋 I develop things for Web!</h1>
+          <h1>Hi, I am Gaurav Avhale. 👋 I develop things for Web!</h1>
           <h2>
           <ReactTyped strings={[" Web Developer " , "  Full Stack Developer" , " MERN Stack Developer "]} typeSpeed={40} backSpeed={50} loop/>
           </h2>

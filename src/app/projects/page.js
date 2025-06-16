@@ -2,14 +2,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./projects.module.css"
+import Link from "next/link";
 
 const projects = [
-  // {
-  //   title: "E-Commerce App",
-  //   desc: "A responsive online store",
-  //   stack: "React, Redux",
-  //   demo: "https://example.com",
-  // },
+  {
+    title: "E-Commerce App",
+    desc: "A responsive online store",
+    stack: "React, Redux, Next.js, Bootstrap, jQuery",
+    demo: "https://swift-cart-gaurav-avhales-projects.vercel.app/",
+  },
   {
     title: "Portfolio Site",
     desc: "This very site!",
@@ -41,9 +42,9 @@ const Projects = () => {
             <h3>{project.title}</h3>
             <p>{project.desc}</p>
             <p><strong>Tech :</strong> {project.stack}</p>
-            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+            <Link style={{textDecoration:'underline', color:"grey"}} href={project.demo} target="_blank" rel="noopener noreferrer">
               View Demo
-            </a>
+            </Link>
           </motion.div>
         ))}
       </div>
