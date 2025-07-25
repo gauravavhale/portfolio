@@ -25,7 +25,7 @@ export default function App() {
         <div className={styles.info}>
           <h1>Hi, I am Gaurav Avhale. 👋 I develop things for Web!</h1>
           <h2>
-          <ReactTyped strings={[" Web Developer " , "  Full Stack Developer" , " MERN Stack Developer "]} typeSpeed={40} backSpeed={50} loop/>
+          <ReactTyped strings={[" Web Developer " , " Frontend Developer ","  Full Stack Developer"]} typeSpeed={40} backSpeed={50} loop/>
           </h2>
           <div className={styles.ctaButton}>
            <Link href={"/projects"}>View My Work<i className="bi bi-arrow-right-short"></i></Link>
